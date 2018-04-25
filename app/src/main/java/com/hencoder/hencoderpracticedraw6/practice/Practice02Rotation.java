@@ -37,6 +37,8 @@ public class Practice02Rotation extends RelativeLayout {
             @Override
             public void onClick(final View v) {
                 // // TODO 在这里处理点击事件，通过 View.animate().rotation/X/Y() 来让 View 旋转
+                //带by的方法是在旋转后的度数的基础上，继续旋转，而普通的方法是固定从0度开始。
+                imageView.animate().rotationXBy(30);
             }
         });
     }
